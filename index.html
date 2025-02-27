@@ -9,7 +9,8 @@
 </head>
 </head>
 
-<body class="font-sans antialiased h-screen bg-black p-[30px]">
+<body class="font-sans antialiased h-full p-[30px] [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+  <!-- <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 "></div> -->
     <header>
       <nav class=" py-2.5 z-20 sticky top-0 rounded-[20px] backdrop-blur-lg lg:backdrop-blur-none bg-indigo-700 bg-opacity-40 lg:bg-transparent bg-clip-text border-white shadow-[0px_0px_28px_-5px_#718096] lg:shadow-none">
         <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
@@ -28,8 +29,29 @@
                 <path stroke="currentColor" stroke-linejoin="round" d="m17 13 3.4641-2V7L17 5l-3.4641 2v4M17 13l-3.4641-2M17 13v4l-7.00001 4M17 13V9m0 4-7.00001 4m3.53591-6L10.5 12.7348M9.99999 21l-3.4641-2.1318M9.99999 21v-4m-3.4641 2v-.1318m0 0V15L10.5 12.7348m-3.96411 6.1334L3.5 17V5m0 0L7 3l3.5 2m-7 0 2.99999 2M10.5 5v7.7348M10.5 5 6.49999 7M17 9l3.5-2M17 9l-3.5-2M9.99999 17l-3.5-2m0 .5V7" />
               </svg>
             </div>
-            <a href="/login"
-              class="text-white lg:backdrop-blur-lg lg:bg-indigo-700 lg:bg-opacity-40 lg:border lg:border-gray-700 lg:rounded-[20px] transition duration-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 lg:bg-clip-text hover:text-blue-500">Login</a>
+            <!-- <a href="/login"
+              class="text-white lg:backdrop-blur-lg lg:bg-opacity-40 lg:border lg:border-gray-700 lg:rounded-[20px] transition duration-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 bg-clip-text hover:text-blue-500 p-px bg-gradient-to-b from-blue-300 to-pink-300">Login</a> -->
+                        <!-- <button
+            class="shadow-[0px_0px_28px_-5px_#718096] rounded-[15px] group relative inline-flex h-12 items-center justify-center overflow-hidden bg-neutral-950 px-6 font-medium text-neutral-200"
+          >
+            <a href="#">Login</a>
+            <div
+              class="absolute inset-0 flex size-full justify-center [transform:skew(-12deg)_translateX(-100%)] group-hover:duration-1000 group-hover:[transform:skew(-12deg)_translateX(100%)]"
+            >
+              <div class="relative h-full w-8 bg-white/20"></div>
+            </div>
+          </button> -->
+
+          <button
+  class="shadow-[0px_0px_28px_-5px_#718096] rounded-[20px] group relative h-12 overflow-hidden text-neutral-200 px-8 py-2  flex justify-center items-center"
+>
+  <a href="#" class="relative z-10">Login</a>
+  <span class="absolute inset-0 overflow-hidden rounded-md">
+    <span
+      class="absolute left-0 aspect-square w-full origin-center -translate-x-full rounded-full bg-neutral-600 transition-all duration-500 group-hover:-translate-x-0 group-hover:scale-150"
+    ></span
+  ></span>
+</button>
             <button data-collapse-toggle="mobile-menu-2" type="button"
               class="inline-flex items-center p-2 ml-1 text-sm text-blue-500 rounded-lg lg:hidden hover:bg-gray-100 "
               aria-controls="mobile-menu-2" aria-expanded="true">
@@ -40,23 +62,23 @@
             </button>
           </div>
           <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
-            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 backdrop-blur-lg bg-indigo-700 bg-opacity-40 lg:rounded-[20px] lg:py-[10px] lg:px-[30px] border-white shadow-[0px_0px_28px_-5px_#718096] bg-clip-text">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 backdrop-blur-xl bg-indigo-700  bg-opacity-40 lg:rounded-[20px] lg:py-[10px] lg:px-[30px] border-white lg:shadow-[0px_0px_28px_-5px_#718096] shadow-none bg-clip-text">
               <li>
                 <a href="#home"
-                  class="block py-2 pl-3 pr-4 rounded lg:p-0  focus:text-blue-500 hover:text-blue-400 cursor-pointer transition duration-500 text-white border-b border-gray-100 lg:border-0"
+                  class="block py-2 pl-3 pr-4 rounded lg:p-0  focus:text-blue-500 hover:text-blue-400 cursor-pointer transition duration-500 text-white lg:border-0"
                   aria-current="page">Home</a>
               </li>
               <li>
                 <a href="#aboutUs"
-                  class="block py-2 pl-3 pr-4 text-white  focus:text-blue-500 hover:text-blue-400 active:text-blue-500 cursor-pointer transition duration-500 border-b border-gray-100 lg:border-0 lg:p-0 ">About Us</a>
+                  class="block py-2 pl-3 pr-4 text-white  focus:text-blue-500 hover:text-blue-400 active:text-blue-500 cursor-pointer transition duration-500 lg:border-0 lg:p-0 ">About Us</a>
               </li>
               <li>
                 <a href="#feature"
-                  class="block py-2 pl-3 pr-4 text-white  focus:text-blue-500 hover:text-blue-400 active:text-blue-500 cursor-pointer transition duration-500 border-b border-gray-100  lg:border-0  lg:p-0 ">Feature</a>
+                  class="block py-2 pl-3 pr-4 text-white  focus:text-blue-500 hover:text-blue-400 active:text-blue-500 cursor-pointer transition duration-500  lg:border-0  lg:p-0 ">Feature</a>
               </li>
               <li>
                 <a href="#contact"
-                  class="block py-2 pl-3 pr-4 text-white  focus:text-blue-500 hover:text-blue-400 cursor-pointer transition duration-500 border-b border-gray-100  lg:border-0  lg:p-0 ">Contact Us</a>
+                  class="block py-2 pl-3 pr-4 text-white  focus:text-blue-500 hover:text-blue-400 cursor-pointer transition duration-500  lg:border-0  lg:p-0 ">Contact Us</a>
               </li>
             </ul>
           </div>
@@ -72,7 +94,8 @@
             <!-- Component -->
             <div class="flex flex-col-reverse md:flex-row items-center gap-8 sm:gap-16">
               <!-- Image -->
-              <img src="./assets/images/online.gif" alt="" class="h-full flex-1 md:max-w-md lg:max-w-lg object-cover" />
+              <img src="./assets/images/home.gif" alt="" class="h-full flex-1 md:max-w-md lg:max-w-lg object-cover " />
+              
               <div class="max-w-3xl flex-1">
                 <!-- Title -->
                 <h1 class="mb-4 text-4xl font-bold md:text-6xl text-blue-500">
@@ -84,10 +107,10 @@
                 </p>
                 <!-- Button -->
                 <div class="mb-6 flex items-center md:mb-10 lg:mb-12">
-                  <a href="javascript:void(0);" class="mr-6 rounded-md bg-blue-500 transition duration-300 hover:text-gray-300 px-6 py-3 text-center font-semibold text-white lg:mr-8">
+                  <a href="javascript:void(0);" class="text-[14px] hover:shadow-[0px_0px_28px_-5px_#718096] mr-6 rounded-md bg-blue-500 transition duration-300 hover:text-gray-300 px-3 lg:px-6 py-3 text-center font-semibold text-white lg:mr-8">
                     Let's Talk
                   </a>
-                  <a href="javascript:void(0);" class=" group flex flex-row items-center justify-center font-bold border-white px-6 py-3 border rounded-md">
+                  <a href="javascript:void(0);" class=" group hover:shadow-[0px_0px_28px_-5px_#718096] flex flex-row items-center justify-center font-bold border-white px-6 py-3 border rounded-md">
                     <svg class=" h-6 mr-2 inline-block text-white group-hover:scale-x-125 transition duration-500b w-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
                     </svg>
@@ -131,7 +154,7 @@
               <div class="flex flex-col items-start gap-2">
                 <div class="flex items-center rounded-md bg-gray-300 px-3 py-1">
                   <div class="mr-1 h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
-                  <p class="text-sm text-blue-400">Available for work</p>
+                  <p class="text-sm text-blue-700">Available for work</p>
                 </div>
                 <p class="text-sm text-gray-300 sm:text-xl">
                   Full Stack Developer & UX/UI
@@ -156,14 +179,14 @@
                   </p>
                 </div>
                 <!-- Buttons -->
-                <div class="flex flex-col gap-4 font-semibold sm:flex-row">
-                  <a href="javascript:void(0);" class="flex items-center gap-4 rounded-md bg-blue-500 px-6 py-3 text-white group">
+                <div class="flex gap-4 font-semibold flex-row items-center justify-center">
+                  <a href="javascript:void(0);" class=" hover:shadow-[0px_0px_28px_-5px_#718096] flex items-center gap-4 rounded-md bg-blue-500 px-6 py-3 text-white group">
                     <svg class="w-6 h-6 inline-block text-white group-hover:text-gray-300 transition duration-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                       <path fill-rule="evenodd" d="M12.037 21.998a10.313 10.313 0 0 1-7.168-3.049 9.888 9.888 0 0 1-2.868-7.118 9.947 9.947 0 0 1 3.064-6.949A10.37 10.37 0 0 1 12.212 2h.176a9.935 9.935 0 0 1 6.614 2.564L16.457 6.88a6.187 6.187 0 0 0-4.131-1.566 6.9 6.9 0 0 0-4.794 1.913 6.618 6.618 0 0 0-2.045 4.657 6.608 6.608 0 0 0 1.882 4.723 6.891 6.891 0 0 0 4.725 2.07h.143c1.41.072 2.8-.354 3.917-1.2a5.77 5.77 0 0 0 2.172-3.41l.043-.117H12.22v-3.41h9.678c.075.617.109 1.238.1 1.859-.099 5.741-4.017 9.6-9.746 9.6l-.215-.002Z" clip-rule="evenodd" />
                     </svg>
-                    <p class="group-hover:text-gray-300 transition duration-300">Email Me</p>
+                    <p class="group-hover:text-gray-300 transition duration-300 ">Email Me</p>
                   </a>
-                  <a href="javascript:void(0);" class="group flex gap-4 rounded-md border border-solid border-white px-6 py-3 ">
+                  <a href="javascript:void(0);" class=" hover:shadow-[0px_0px_28px_-5px_#718096] group flex gap-4 rounded-md border border-solid border-white px-6 py-3 ">
                     <svg class="w-6 h-6 inline-block text-white group-hover:hidden transition duration-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                       <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 19V6a1 1 0 0 1 1-1h4.032a1 1 0 0 1 .768.36l1.9 2.28a1 1 0 0 0 .768.36H16a1 1 0 0 1 1 1v1M3 19l3-8h15l-3 8H3Z" />
                     </svg>
@@ -175,8 +198,8 @@
                 </div>
               </div>
               <!-- Image -->
-              <div class="min-h-[530px] overflow-hidden rounded-md bg-gray-100">
-                <img src="./assets/images/rasin.jpg" class="w-full h-full" alt="">
+              <div class=" overflow-hidden rounded-md ">
+                <img src="./assets/images/Marketing.gif" class="h-auto w-auto" alt="">
               </div>
             </div>
           </div>
@@ -272,7 +295,7 @@
   
         <!-- Feature Section -->
   
-        <section id="feature">
+        <section id="feature" >
           <!-- Container -->
           <div class="mx-auto w-full max-w-7xl px-5 py-16 md:py-20 flex items-center justify-center">
             <!-- Component -->
@@ -286,12 +309,12 @@
                         <path d="m3 2 1.578 17.834L12 22l7.468-2.165L21 2H3Zm13.3 14.722-4.293 1.204H12l-4.297-1.204-.297-3.167h2.108l.15 1.526 2.335.639 2.34-.64.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506l-.954 10.71Z" />
                       </svg>
                     </div>
-                    <p class="max-w-xs text-gray-300 md:max-w-64">
-                      Say goodbye to payment headaches with SecurePay!
+                    <p class="max-w-xs text-gray-300 md:max-w-64 line-clamp-2">
+                      (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
                     </p>
                   </div>
                   <h3 class="text-2xl font-bold md:text-3xl text-blue-400">
-                    Maximize Productivity. Organize Your Time.
+                    Cascading Style Sheets (CSS)
                   </h3>
                 </div>
                 <div class="flex flex-col gap-4">
@@ -301,18 +324,20 @@
                         <path d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z" />
                       </svg>
                     </div>
-                    <p class="max-w-xs text-gray-300 md:max-w-64">
-                      Say goodbye to payment headaches with SecurePay!
+                    <p class="max-w-xs text-gray-300 md:max-w-64 line-clamp-2">
+HTML is the standard markup language for creating web pages, defining their structure and content, and is often used with CSS for styling and JavaScript for functionality. 
                     </p>
                   </div>
                   <h3 class="text-2xl font-bold md:text-3xl text-blue-400">
-                    Maximize Productivity. Organize Your Time.
+                    HyperText Markup Language
                   </h3>
                 </div>
               </div>
               <!-- Item -->
-  
-              <img class="w-86 mt-4 h-88 bg-red-600" src="./assets/images/feature.gif" />
+              <div class="flex items-center justify-center w-full ">
+                
+                <img class="w-full mt-4 h-full"  src="./assets/images/feature.gif" />
+              </div>
               <!-- Item -->
               <div class="flex flex-col items-start gap-16 [grid-area:2/1/3/3] c-grid-area-2_1_3_3 md:gap-24 sm:[grid-area:1/2/2/3] c-sm-grid-area-1_2_2_3 md:[grid-area:1/3/4/4] c-md-grid-area-1_3_4_4">
                 <div class="flex flex-col gap-4 md:items-end">
@@ -322,12 +347,12 @@
                         <path stroke="currentColor" stroke-linejoin="round" d="m17 13 3.4641-2V7L17 5l-3.4641 2v4M17 13l-3.4641-2M17 13v4l-7.00001 4M17 13V9m0 4-7.00001 4m3.53591-6L10.5 12.7348M9.99999 21l-3.4641-2.1318M9.99999 21v-4m-3.4641 2v-.1318m0 0V15L10.5 12.7348m-3.96411 6.1334L3.5 17V5m0 0L7 3l3.5 2m-7 0 2.99999 2M10.5 5v7.7348M10.5 5 6.49999 7M17 9l3.5-2M17 9l-3.5-2M9.99999 17l-3.5-2m0 .5V7" />
                       </svg>
                     </div>
-                    <p class="max-w-xs text-gray-300 md:max-w-64 md:text-right">
-                      Say goodbye to payment headaches with SecurePay!
+                    <p class="max-w-xs text-gray-300 md:max-w-64 md:text-right line-clamp-2">
+                      a free, open-source PHP web framework designed for building web applications, known for its elegant syntax, robust features, and developer-friendly tools, following the Model-View-Controller (MVC) architectural pattern. 
                     </p>
                   </div>
                   <h3 class="text-2xl font-bold md:text-right md:text-3xl text-blue-400">
-                    Maximize Productivity. Organize Your Time.
+                    Laravel 
                   </h3>
                 </div>
                 <div class="flex flex-col gap-4 md:items-end">
@@ -337,12 +362,12 @@
                         <path d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z" />
                       </svg>
                     </div>
-                    <p class="max-w-xs text-gray-300 md:max-w-64 md:text-right">
-                      Say goodbye to payment headaches with SecurePay!
+                    <p class="max-w-xs text-gray-300 md:max-w-64 md:text-right line-clamp-2">
+                      is a utility-first CSS framework that provides a collection of pre-defined, highly customizable classes for building websites and web applications quickly and efficiently, without writing custom CSS. 
                     </p>
                   </div>
                   <h3 class="text-2xl font-bold md:text-right md:text-3xl text-blue-400">
-                    Maximize Productivity. Organize Your Time.
+                    Tailwind CSS
                   </h3>
                 </div>
               </div>
@@ -363,7 +388,7 @@
               <!-- Content -->
               <ul class="grid gap-5 sm:grid-cols-2 md:gap-4">
                 <!-- Item -->
-                <li class="rounded-md bg-gray-100 p-8 md:p-10">
+                <li class="rounded-[10px] border-green-500 border-r-pink-400 border-t-pink-400 border p-8 md:p-10">
                   <div class="flex items-center justify-between">
                     <p class="mr-4 rounded-md bg-blue-400 px-4 py-2 font-semibold uppercase">
                       Strategy
@@ -374,7 +399,29 @@
                   </div>
                   <!-- Divider -->
                   <div class="mb-20 mt-4 h-0.5 w-full bg-blue-400"></div>
-                  <p class="mb-3 text-xl font-semibold text-black">
+                  <p class="mb-3 text-xl font-semibold text-white">
+                    InStrategy
+                  </p>
+                  <p class="text-sm text-gray-500">
+                    The XYZ Payment App is a user-friendly mobile application that
+                    revolutionizes the way you handle your payments and transactions.
+                    With its intuitive interface and robust functionality.
+                  </p>
+                </li>
+                <!-- Item -->
+                <li class="rounded-md bg-black border p-8 border-green-500 border-r-pink-400 border-t-pink-400 border md:p-10">
+                  <div class="flex  items-center justify-between">
+                    <p class="mr-4 rounded-md  px-4 py-2 font-semibold uppercase">
+                      Strategy
+                    </p>
+                    
+                    <svg class="text-blue-400" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M34.2972 10.8739L20.4472 5.0869C20.1603 4.97103 19.8397 4.97103 19.5528 5.0869L5.70277 10.8739C5.4697 10.9755 5.276 11.1505 5.15104 11.3724C5.02607 11.5943 4.97665 11.8511 5.01027 12.1037L7.3186 29.4647C7.34387 29.6509 7.41342 29.8283 7.52139 29.9819C7.62935 30.1355 7.77257 30.2608 7.93897 30.3472L19.4806 36.1343C19.6432 36.2105 19.8205 36.25 20 36.25C20.1795 36.25 20.3568 36.2105 20.5194 36.1343L32.061 30.3472C32.2274 30.2608 32.3706 30.1355 32.4786 29.9819C32.5866 29.8283 32.6561 29.6509 32.6814 29.4647L34.9897 12.1037C35.0233 11.8511 34.9739 11.5943 34.849 11.3724C34.724 11.1505 34.5303 10.9755 34.2972 10.8739V10.8739ZM25.7131 25.7176C25.5493 25.7902 25.3728 25.8296 25.1937 25.8334C24.979 25.8332 24.7684 25.7737 24.5852 25.6614C24.4019 25.5491 24.2531 25.3884 24.155 25.1968L22.9431 22.7518H17.0569L15.845 25.1968C15.7073 25.4731 15.4657 25.6831 15.1735 25.7808C14.8813 25.8785 14.5624 25.8558 14.2869 25.7176C14.0114 25.5795 13.8019 25.3373 13.7045 25.0442C13.6071 24.7512 13.6298 24.4314 13.7675 24.1551L18.9613 13.7385C19.0596 13.5472 19.2085 13.3868 19.3917 13.2748C19.575 13.1627 19.7854 13.1035 20 13.1035C20.2146 13.1035 20.425 13.1627 20.6083 13.2748C20.7915 13.3868 20.9404 13.5472 21.0387 13.7385L26.2325 24.1551C26.3645 24.4323 26.3841 24.7501 26.2873 25.0415C26.1904 25.3329 25.9846 25.5753 25.7131 25.7176V25.7176ZM20 16.849L21.789 20.437H18.211L20 16.849Z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                  <!-- Divider -->
+                  <div class="mb-20 mt-4 h-0.5 w-full bg-blue-400"></div>
+                  <p class="mb-3 text-xl font-semibold text-white">
                     Intuitive Calendar Interface
                   </p>
                   <p class="text-sm text-gray-500">
@@ -384,7 +431,7 @@
                   </p>
                 </li>
                 <!-- Item -->
-                <li class="rounded-md bg-gray-100 p-8 md:p-10">
+                <li class="rounded-md bg-black p-8 border-green-500 border-r-pink-400 border-t-pink-400 border md:p-10">
                   <div class="flex  items-center justify-between">
                     <p class="mr-4 rounded-md bg-blue-400 px-4 py-2 font-semibold uppercase">
                       Strategy
@@ -395,7 +442,7 @@
                   </div>
                   <!-- Divider -->
                   <div class="mb-20 mt-4 h-0.5 w-full bg-blue-400"></div>
-                  <p class="mb-3 text-xl font-semibold text-black">
+                  <p class="mb-3 text-xl font-semibold text-white">
                     Intuitive Calendar Interface
                   </p>
                   <p class="text-sm text-gray-500">
@@ -405,7 +452,7 @@
                   </p>
                 </li>
                 <!-- Item -->
-                <li class="rounded-md bg-gray-100 p-8 md:p-10">
+                <li class="rounded-md bg-black p-8 border-green-500 border-r-pink-400 border-t-pink-400 border md:p-10">
                   <div class="flex  items-center justify-between">
                     <p class="mr-4 rounded-md bg-blue-400 px-4 py-2 font-semibold uppercase">
                       Strategy
@@ -416,28 +463,7 @@
                   </div>
                   <!-- Divider -->
                   <div class="mb-20 mt-4 h-0.5 w-full bg-blue-400"></div>
-                  <p class="mb-3 text-xl font-semibold text-black">
-                    Intuitive Calendar Interface
-                  </p>
-                  <p class="text-sm text-gray-500">
-                    The XYZ Payment App is a user-friendly mobile application that
-                    revolutionizes the way you handle your payments and transactions.
-                    With its intuitive interface and robust functionality.
-                  </p>
-                </li>
-                <!-- Item -->
-                <li class="rounded-md bg-gray-100 p-8 md:p-10">
-                  <div class="flex  items-center justify-between">
-                    <p class="mr-4 rounded-md bg-blue-400 px-4 py-2 font-semibold uppercase">
-                      Strategy
-                    </p>
-                    <svg class="text-blue-400" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M34.2972 10.8739L20.4472 5.0869C20.1603 4.97103 19.8397 4.97103 19.5528 5.0869L5.70277 10.8739C5.4697 10.9755 5.276 11.1505 5.15104 11.3724C5.02607 11.5943 4.97665 11.8511 5.01027 12.1037L7.3186 29.4647C7.34387 29.6509 7.41342 29.8283 7.52139 29.9819C7.62935 30.1355 7.77257 30.2608 7.93897 30.3472L19.4806 36.1343C19.6432 36.2105 19.8205 36.25 20 36.25C20.1795 36.25 20.3568 36.2105 20.5194 36.1343L32.061 30.3472C32.2274 30.2608 32.3706 30.1355 32.4786 29.9819C32.5866 29.8283 32.6561 29.6509 32.6814 29.4647L34.9897 12.1037C35.0233 11.8511 34.9739 11.5943 34.849 11.3724C34.724 11.1505 34.5303 10.9755 34.2972 10.8739V10.8739ZM25.7131 25.7176C25.5493 25.7902 25.3728 25.8296 25.1937 25.8334C24.979 25.8332 24.7684 25.7737 24.5852 25.6614C24.4019 25.5491 24.2531 25.3884 24.155 25.1968L22.9431 22.7518H17.0569L15.845 25.1968C15.7073 25.4731 15.4657 25.6831 15.1735 25.7808C14.8813 25.8785 14.5624 25.8558 14.2869 25.7176C14.0114 25.5795 13.8019 25.3373 13.7045 25.0442C13.6071 24.7512 13.6298 24.4314 13.7675 24.1551L18.9613 13.7385C19.0596 13.5472 19.2085 13.3868 19.3917 13.2748C19.575 13.1627 19.7854 13.1035 20 13.1035C20.2146 13.1035 20.425 13.1627 20.6083 13.2748C20.7915 13.3868 20.9404 13.5472 21.0387 13.7385L26.2325 24.1551C26.3645 24.4323 26.3841 24.7501 26.2873 25.0415C26.1904 25.3329 25.9846 25.5753 25.7131 25.7176V25.7176ZM20 16.849L21.789 20.437H18.211L20 16.849Z" fill="currentColor"></path>
-                    </svg>
-                  </div>
-                  <!-- Divider -->
-                  <div class="mb-20 mt-4 h-0.5 w-full bg-blue-400"></div>
-                  <p class="mb-3 text-xl font-semibold text-black">
+                  <p class="mb-3 text-xl font-semibold text-white">
                     Intuitive Calendar Interface
                   </p>
                   <p class="text-sm text-gray-500">
@@ -450,7 +476,6 @@
             </div>
           </div>
         </section>
-  
         <!-- Contact Section -->
   
         <section id="contact">
